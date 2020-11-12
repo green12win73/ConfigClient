@@ -17,3 +17,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://my.eureka-server.com:8000/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, refresh
